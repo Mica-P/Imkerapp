@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('post_id', 11);
             $table->string('user', 50);
             $table->text('comment_data');
-            $table->dateTime();
+            $table->dateTime('created_at');
         });
     }
 
