@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('products', ProductController::class);
+
 
 Route::get('/', function () {
     return view('homepage');
@@ -58,3 +60,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::get('/products/index', function () {
+    return view('index');
+});
+

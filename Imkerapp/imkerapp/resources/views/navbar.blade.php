@@ -56,7 +56,7 @@
                                 <div class="dropdown">
                                     <a class="nav-link external" href="http://127.0.0.1:8000/artikelen">Artikelen</a>
                                     <div class="dropdown-content">
-                                        <a class="nav-link external" href="http://127.0.0.1:8000/verslagen">Verslagen</a>
+                                            <a class="nav-link external" href="http://127.0.0.1:8000/products">Verslagen</a>
                                     </div>
                                 </div>
                             </li>
