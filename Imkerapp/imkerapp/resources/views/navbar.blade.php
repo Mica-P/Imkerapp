@@ -60,7 +60,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <a class="nav-link external" href="http://127.0.0.1:8000/admin">admin</a>
+                            <a class="nav-link external" href="http://127.0.0.1:8000/login">admin</a>
                         </ul>
                     </div>
                 </nav>

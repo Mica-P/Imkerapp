@@ -24,64 +24,44 @@
 require_once ('../resources/views/navbar.blade.php');
 ?>
 <br><br><br><br><br>
-
+<h1>Verslagen</h1>
 
 <?php
 require_once ('../resources/views/navbar.blade.php');
 ?>
 @extends('products.layout')
-
 @section('content')
-    <h2>Laravel 9 CRUD with Image Upload Example from scratch - ItSolutionStuff.com</h2>
-    <div class="pull-right">
-        <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
-    </div>
 
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
         </div>
     @endif
-
+    <a class="btn btn-primary" style="margin-left: 90%" href="{{ route('products.create')}}">+ Maken</a>
     @foreach ($products as $product)
-        <tr>
-            <td>{{ ++$i }}</td>
-            <td><img src="/images/{{ $product->image }}" width="100px"></td>
-            <td>{{ $product->name }}</td>
-            <td>{{ $product->detail }}</td>
-            <td>
-                <form action="{{ route('products.destroy',$product->id) }}" method="POST">
-
-                    <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
-
-                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
-
-                    @csrf
-                    @method('DELETE')
-
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
-            </td>
-        </tr>
-        @endforeach
-        </table>
-
-        {!! $products->links() !!}
-
-@endsection
-
-<div class="row">
+    <div class="row">
     <div class="leftcolumn">
         <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Titel: {{ $product->name }}</h2>
+            <p>Datum: {{$product->created_at}}</p>
+            <img src="/images/{{ $product->image }}" width="300px">
+            <p>Beschrijving: {{ $product->detail }}</p>
+            <form action="{{ route('products.destroy',$product->id) }}" method="POST">
+
+                <a class="" href="{{ route('products.show',$product->id) }}">Show</a>
+
+                <a class="" href="{{ route('products.edit',$product->id) }}">Edit</a>
+                <a><button type="submit" class="">Delete</button></a>
+
+                @csrf
+                @method('DELETE')
+
+
         </div>
     </div>
 </div>
-
+    @endforeach
+    {!! $products->links() !!}
 <style>
     /* Header/Blog Title */
     .header {

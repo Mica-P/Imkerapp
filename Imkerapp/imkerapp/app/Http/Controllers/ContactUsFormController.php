@@ -31,6 +31,7 @@ class ContactUsFormController extends Controller {
             $message->from($request->email);
             $message->to('6012520@mborijnland.nl', 'Admin')->subject($request->get('subject'));
         });
-        return back()->with('Success!');
+        return redirect('contact')
+            ->with('success','Mail verzonden!');
     }
 }
