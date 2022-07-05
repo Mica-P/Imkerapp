@@ -32,26 +32,28 @@ require_once ('../resources/views/navbar.blade.php');
 
     <article>
 
-        <header class="post-header"><h1 class="page-title">contact</h1></header><div class="post-content">
-            <p>Het bestuur van de Imkervereniging Oegstgeest bestaat uit:</p>
+        <header class="post-header"><h1 class="page-title mx-auto" style="width: 17%; font-size: 5rem;">Contact</h1></header>
+        <br><br>
+        <div class="post-content">
+            <p class="mx-auto" style="width: 500px;">Het bestuur van de Imkervereniging Oegstgeest bestaat uit:</p>
 
 
 
-            <table class="container mt-lg-1">
+            <table class="mx-auto border border-warning" style="width: 400px; font-size: large">
                 <tbody>
-                <tr>
+                <tr class="border border-warning">
                     <td> Alma van der Wijgaard </td>
                     <td> Voorzitter </td>
                 </tr>
-                <tr>
+                <tr class="border border-warning">
                     <td> Fred Schalker </td>
                     <td> Secretaris </td>
                 </tr>
-                <tr>
+                <tr class="border border-warning">
                     <td> Karel Diephuis </td>
                     <td> Penningmeester </td>
                 </tr>
-                <tr>
+                <tr class="border border-warning">
                     <td> Håvar Solheim </td>
                     <td> Bestuur lid </td>
                 </tr>
@@ -61,6 +63,7 @@ require_once ('../resources/views/navbar.blade.php');
 
 
             <div class="container mt-5">
+                <h2>Neem contact op:</h2>
                 <!-- Success message -->
                 @if(Session::has('success'))
                     <div class="alert alert-success">
@@ -70,7 +73,7 @@ require_once ('../resources/views/navbar.blade.php');
                 <form action="" method="post" action="{{ route('contact.store') }}">
                     @csrf
                     <div class="form-group">
-                        <label>Name</label>
+                        <label>Naam</label>
                         <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
                         <!-- Error -->
                         @if ($errors->has('name'))
@@ -89,7 +92,7 @@ require_once ('../resources/views/navbar.blade.php');
                         @endif
                     </div>
                     <div class="form-group">
-                        <label>Phone</label>
+                        <label>telefoonnummer</label>
                         <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
                         @if ($errors->has('phone'))
                             <div class="error">
@@ -98,7 +101,7 @@ require_once ('../resources/views/navbar.blade.php');
                         @endif
                     </div>
                     <div class="form-group">
-                        <label>Subject</label>
+                        <label>Onderwerp</label>
                         <input type="text" class="form-control {{ $errors->has('subject') ? 'error' : '' }}" name="subject"
                                id="subject">
                         @if ($errors->has('subject'))
@@ -108,7 +111,7 @@ require_once ('../resources/views/navbar.blade.php');
                         @endif
                     </div>
                     <div class="form-group">
-                        <label>Message</label>
+                        <label>Boodschap</label>
                         <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"
                                   rows="4"></textarea>
                         @if ($errors->has('message'))
@@ -117,15 +120,15 @@ require_once ('../resources/views/navbar.blade.php');
                             </div>
                         @endif
                     </div>
-                    <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
+                    <input type="submit" name="Verzenden" value="Submit" class="btn btn-dark btn-block">
                 </form>
             </div>
 
-            <p>Voor vragen over de vereniging, of onze cursus, verstuur een mail naar onze <a href="">secretaris</a>.</p>
+            <p class="mx-auto" style="width: 800px;">Voor vragen over de vereniging, of onze cursus, verstuur een mail naar onze <a href="">secretaris</a>.</p>
 
 
 
-            <p>Voor vragen over de website zelf, neem contact op met de <a href="">webmaster</a>.</p>
+            <p class="mx-auto" style="width: 800px;">Voor vragen over de website zelf, neem contact op met de <a href="">webmaster</a>.</p>
 
 
 
