@@ -30,7 +30,7 @@ require_once ('../resources/views/navbar.blade.php');
 
 <div class="main-container">
 
-    <article">
+    <article>
 
         <header class="post-header"><h1 class="page-title">contact</h1></header><div class="post-content">
             <p>Het bestuur van de Imkervereniging Oegstgeest bestaat uit:</p>
