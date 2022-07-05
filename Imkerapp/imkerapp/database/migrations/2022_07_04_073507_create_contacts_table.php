@@ -1,10 +1,8 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
-return new class extends Migration
+class CreateContactsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +11,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->BigInteger('name_id');
-            //$table->foreign('name_id')->references('id')->on('users');
-            $table->string('title', 255);
-            $table->text('short_description');
-            $table->text('post_data');
-            $table->text('tags');
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('subject');
+            $table->text('message');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -32,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('contacts');
     }
-};
+}

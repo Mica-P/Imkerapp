@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ContactUsFormController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,7 +62,13 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
 Route::get('/products/index', function () {
     return view('index');
 });
 
+
+
+
+Route::get('/contact', [ContactUsFormController::class, 'createForm']);
+Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
