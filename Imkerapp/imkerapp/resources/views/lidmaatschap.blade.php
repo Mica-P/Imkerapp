@@ -25,12 +25,15 @@ require_once ('../resources/views/navbar.blade.php');
 ?>
 <br><br><br><br><br>
 
-<div class="main-container">
+<div class="main-container mx-auto">
 
-    <article id="" class="">
+    <article class="row">
 
-        <header class="post-header"><h1 class="page-title">lidmaatschap</h1></header><div class="post-content"><figure id="attachment_770" aria-describedby="caption-attachment-770" style="width: 214px" class="wp-caption alignright"><img class="size-medium wp-image-770" src="https://www.imkervereniging-oegstgeest.nl/wp-content/uploads/2021/03/bijenhouden-214x300.png" alt="" width="214" height="300" srcset="https://www.imkervereniging-oegstgeest.nl/wp-content/uploads/2021/03/bijenhouden-214x300.png 214w, https://www.imkervereniging-oegstgeest.nl/wp-content/uploads/2021/03/bijenhouden.png 566w" sizes="(max-width: 214px) 100vw, 214px" /><figcaption id="caption-attachment-770" class="wp-caption-text">Bijenhoudenmagazine nbv</figcaption></figure>
-            <p>De imkervereniging-Oegstgeest is aangesloten bij de landelijke Nederlandse Bijenhoudersvereniging. Met een lidmaatschap van de NBV bent u automatisch lid van één van de regio afdelingen. De NBV biedt u:</p>
+        <div class="col-2"></div>
+        <div class="post-content col-5">
+            <header class="post-header"><h1 class="page-title">Lidmaatschap</h1></header>
+            <br><br>
+          <p>De imkervereniging-Oegstgeest is aangesloten bij de landelijke Nederlandse Bijenhoudersvereniging. Met een lidmaatschap van de NBV bent u automatisch lid van één van de regio afdelingen. De NBV biedt u:</p>
             <ul>
                 <li>belangenbehartiging van de imkerij in Nederland</li>
                 <li>uitvoerig bijenteeltonderwijs programma</li>
@@ -43,9 +46,21 @@ require_once ('../resources/views/navbar.blade.php');
                 <li>verzekerd zijn van ondersteuning van collega imkers;</li>
                 <li>voor al uw vragen kunt u zich wenden tot het <a href="https://www.bijenhouders.nl/over-de-nbv/lidmaatschap#aanmeldformulier">verenigingssecretariaat in Wageningen.</a></li>
             </ul>
+             </div>
+        <div class="col-2">
+            <figure id="attachment_770" aria-describedby="caption-attachment-770" style="width: 214px" class="wp-caption alignright">
+                <img class="size-medium wp-image-770" src="https://www.imkervereniging-oegstgeest.nl/wp-content/uploads/2021/03/bijenhouden-214x300.png" alt="" width="214" height="300" srcset="https://www.imkervereniging-oegstgeest.nl/wp-content/uploads/2021/03/bijenhouden-214x300.png 214w, https://www.imkervereniging-oegstgeest.nl/wp-content/uploads/2021/03/bijenhouden.png 566w" sizes="(max-width: 214px) 100vw, 214px" /><figcaption id="caption-attachment-770" class="wp-caption-text">Bijenhoudenmagazine nbv</figcaption></figure>
+        </div>
+        <div class="col"></div>
+    </article>
+    <article class="row">
+        <div class="col"></div>
+        <div class="col-8 align-self-center">
+            <br><br>
             <p>Informatie over contributie en een mogelijkheid tot aanmelding vindt u op de <a href="https://www.bijenhouders.nl/over-de-nbv/lidmaatschap">NBV website</a>.</p>
             <p>U kunt ook alleen donateur van de Oegstgeester Imkervereniging worden. Dat kunt u aanvragen via het <a href="https://www.imkervereniging-oegstgeest.nl/contact/">contactformulier</a>.</p>
         </div>
+        <div class="col"></div>
     </article>
 
 
@@ -100,7 +115,7 @@ require_once ('../resources/views/navbar.blade.php');
 
 
 
-
+<br><br><br><br><br>
 
 
 <?php

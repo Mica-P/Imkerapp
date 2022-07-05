@@ -120,7 +120,7 @@ require_once ('../resources/views/navbar.blade.php');
                             </div>
                         @endif
                     </div>
-                    <input type="submit" name="Verzenden" value="Submit" class="btn btn-dark btn-block">
+                    <input type="submit" name="Send" value="Verzenden" class="btn btn-dark btn-block">
                 </form>
             </div>
 
