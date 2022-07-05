@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
+    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link
         rel="stylesheet"
@@ -30,30 +30,30 @@ require_once ('../resources/views/navbar.blade.php');
 
 <div class="main-container">
 
-    <article id="page-243" class="post-243 page type-page status-publish hentry">
+    <article">
 
         <header class="post-header"><h1 class="page-title">contact</h1></header><div class="post-content">
             <p>Het bestuur van de Imkervereniging Oegstgeest bestaat uit:</p>
 
 
 
-            <table class="wp-block-table has-fixed-layout is-style-stripes">
+            <table class="container mt-lg-1">
                 <tbody>
                 <tr>
-                    <td>Alma van der Wijgaard</td>
-                    <td>voorzitter</td>
+                    <td> Alma van der Wijgaard </td>
+                    <td> Voorzitter </td>
                 </tr>
                 <tr>
-                    <td>Fred Schalker</td>
-                    <td>secretaris</td>
+                    <td> Fred Schalker </td>
+                    <td> Secretaris </td>
                 </tr>
                 <tr>
-                    <td>Karel Diephuis</td>
-                    <td>penningmeester</td>
+                    <td> Karel Diephuis </td>
+                    <td> Penningmeester </td>
                 </tr>
                 <tr>
-                    <td>Håvar Solheim</td>
-                    <td>bestuur lid</td>
+                    <td> Håvar Solheim </td>
+                    <td> Bestuur lid </td>
                 </tr>
                 </tbody>
             </table>

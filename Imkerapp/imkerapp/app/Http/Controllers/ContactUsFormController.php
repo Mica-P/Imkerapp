@@ -13,8 +13,8 @@ class ContactUsFormController extends Controller {
         // Form validation
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required|email',
-            'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'email' => 'required',
+            'phone' => 'required',
             'subject'=>'required',
             'message' => 'required'
         ]);
@@ -29,8 +29,8 @@ class ContactUsFormController extends Controller {
             'user_query' => $request->get('message'),
         ), function($message) use ($request){
             $message->from($request->email);
-            $message->to('digambersingh126@gmail.com', 'Admin')->subject($request->get('subject'));
+            $message->to('6012520@mborijnland.nl', 'Admin')->subject($request->get('subject'));
         });
-        return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
+        return back()->with('Success!');
     }
 }

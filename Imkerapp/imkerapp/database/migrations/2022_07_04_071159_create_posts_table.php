@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('name_id');
+            $table->BigInteger('name_id');
+            //$table->foreign('name_id')->references('id')->on('users');
             $table->string('title', 255);
             $table->text('short_description');
             $table->text('post_data');
