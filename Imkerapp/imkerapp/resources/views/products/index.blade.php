@@ -43,7 +43,6 @@ require_once ('../resources/views/navbar.blade.php');
     <div class="leftcolumn">
         <div class="card">
             <h2>Titel: {{ $product->name }}</h2>
-            <p>Datum: {{$product->created_at}}</p>
             <img src="/images/{{ $product->image }}" width="300px">
             <p>Beschrijving: {{ $product->detail }}</p>
             <form action="{{ route('products.destroy',$product->id) }}" method="POST">

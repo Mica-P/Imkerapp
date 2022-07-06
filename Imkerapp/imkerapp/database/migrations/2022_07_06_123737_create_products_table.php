@@ -19,8 +19,6 @@ return new class extends Migration
             $table->text('detail');
             $table->string('image');
             $table->timestamps();
-            $table->created_at();
-            $table->timestamp('created_at');
         });
     }
 

@@ -39,7 +39,7 @@ require_once ('../resources/views/navbar.blade.php');
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <p>Datum: {{$product->created_at}}</p>
+
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
