@@ -9,6 +9,7 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- https://fonts.google.com/specimen/Open+Sans -->
     <link rel="stylesheet" href="{{url('css/navbar.css')}}" />
 
@@ -25,13 +26,14 @@ require_once ('../resources/views/navbar.blade.php');
 ?>
 <br><br><br><br><br>
 
-<div class="main-container">
+<div class="main-container mx-auto">
 
-    <article id="page-217" class="post-217 page type-page status-publish hentry">
+    <article id="page-217" class="row">
+        <div class="col-2"></div>
 
-        <header class="post-header"><h1 class="page-title">links</h1></header><div class="post-content">
-            <p>Meer informatie over het houden van bijen vindt u op onderstaande links en websites.</p>
-            <div class="row">
+            <div class="col-7">
+                <header class="post-header"><h1 class="page-title">Links</h1></header><div class="post-content">
+                    <p>Meer informatie over het houden van bijen vindt u op onderstaande links en websites.</p>
                 <div class="col-lg-7 col-sm-7">
                     <h5>Algemene links over Bijenhouden</h5>
                     <table>
@@ -99,6 +101,7 @@ require_once ('../resources/views/navbar.blade.php');
                 </div>
             </div>
         </div>
+        <div class="col-2"></div>
     </article>
 
 <br>

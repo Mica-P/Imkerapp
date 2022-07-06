@@ -9,6 +9,7 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- https://fonts.google.com/specimen/Open+Sans -->
     <link rel="stylesheet" href="{{url('css/navbar.css')}}" />
 
